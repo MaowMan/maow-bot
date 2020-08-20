@@ -53,11 +53,16 @@ async function main(source) {
                 waitUntil: 'networkidle0'
             });
             const gallery = await pages[worker_id].$("#photos_snowlift");
-            await gallery.$eval("img.spotlight", node => node.src)
+            const tooltip = await pages[worker_id].$("#js_1c");
+            const like = Number(await tooltip.$eval("span",node=>node.innerHTML));
+            console.log(like);
+            if(like>1000){
+                await gallery.$eval("img.spotlight", node => node.src)
                 .then(result => {
                     //console.log(result);
                     results.push(result);
                 });
+            }
             console.log(`${data.length} process:${worker_id + 1}`);
         }
         catch (error) {

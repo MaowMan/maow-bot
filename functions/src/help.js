@@ -70,8 +70,8 @@ const flex = {
               "type": "button",
               "action": {
                 "type": "message",
-                "label": "抽日本",
-                "text": "抽日本"
+                "label": "猜",
+                "text": "猜 50"
               }
             },
 
@@ -94,7 +94,7 @@ const flex = {
 
 const message = {
     "type": "flex",
-    "altText": "指令介紹與當前line版本不相容",
+    "altText": "貓貓機器人指令總覽",
     "contents": flex
 }
 

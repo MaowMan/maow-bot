@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "jssoup": "0.0.12",
+    "lodash": "^4.17.20",
     "node-fetch": "^2.6.0",
     "puppeteer": "^5.2.1",
-    "puppeteer-autoscroll-down": "^0.1.6"
+    "puppeteer-autoscroll-down": "^0.1.6",
+    "puppeteer-select": "^1.0.3"
   }
 }

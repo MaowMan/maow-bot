@@ -30,6 +30,9 @@ const router = async function (message, reply_token, source) {
             case "抽":
                 await beauty(reply_token, "japen");
                 return 0;
+            case "dcard":
+                await beauty(reply_token,"dcard");
+                return 0;
             case "猜":
                 if (typeof command[1] === "string" && source.type === "group"){
                     await guess(command[1] , reply_token, source);

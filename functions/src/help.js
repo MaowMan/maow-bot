@@ -70,6 +70,14 @@ const flex = {
               "type": "button",
               "action": {
                 "type": "message",
+                "label": "dcard",
+                "text": "dcard"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
                 "label": "猜",
                 "text": "猜 50"
               }
@@ -85,7 +93,7 @@ const flex = {
       "contents": [
         {
           "type": "text",
-          "text": "version 0.1 2020/8/15",
+          "text": "version 0.1 2020/8/27",
           "size": "xs"
         }
       ]

@@ -2,7 +2,7 @@ const fs = require("fs");
 
 
 const sources = {
-    "taiwan": ["dcard"],
+    "dcard": ["dcard"],
     //"japen": ["yoimachii","gravure46"]
 }
 
